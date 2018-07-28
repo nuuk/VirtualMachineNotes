@@ -1,0 +1,53 @@
+Install vim
+sudo apt-get install vim
+
+Pin terminal to panel
+- Right-click on panel
+- Add/Remove Panel Items
+- Go to "Panel Applets Tab"
+  - Click on "+ Add" button
+  - Select "Application Launch Bar"
+    - Click "+ Add"
+- A new "+" sign will be added to the panel, all the way to the right.
+  - click on the "+" sign.
+  - find "LXTerminal" and click "+ Add"
+  - click "Close"
+- Move the terminal button to the proper place:
+  - Right-click on panel
+  - select "Panel Settings"
+  - go to "Panel Applets" tab
+  - highlight the LXTerminal Application Launch Bar
+  - keep pressing the "^ Up" button until the LXTerminal Application Launch
+    bar goes to where you want it to finally reside.
+
+Install Sublime Text
+- Download the appropriate tarball from here:
+  https://www.sublimetext.com/3
+- cd
+- mkdir SublimeText3
+- cd ~/Downloads
+- mv sublime_text_3_build_3126_x64.tar.bz2 ~/SublimeText3/
+- tar xvjf sublime_text_3_build_3126_x64.tar.bz
+
+Install pip
+- http://pythoncentral.io/how-to-install-virtualenv-python/
+- easy_install pip
+- The program 'easy_install' is currently not installed. You can install it by
+  typing:
+  sudo apt install python-setuptools
+- sudo apt install python-setuptools
+- sudo easy_install pip
+
+Install Python VirtualEnv
+- http://pythoncentral.io/how-to-install-virtualenv-python/
+- sudo pip install virtualenv
+
+Install Django:
+- https://docs.djangoproject.com/en/1.10/topics/install/
+- http://docs.python-guide.org/en/latest/dev/virtualenvs/
+- mkdir
+- mkdir -p /home/nuuk/python35container
+- cd /home/nuuk/python35container
+- virtualenv -p /usr/bin/python3.5 venv
+- source venv/bin/activate
+- pip install Django
